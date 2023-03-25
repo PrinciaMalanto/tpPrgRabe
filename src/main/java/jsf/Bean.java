@@ -16,13 +16,15 @@ import java.util.List;
 @Named(value = "bean")
 @RequestScoped
 public class Bean {
+
     private int nombre;
+
     /**
      * Creates a new instance of Bean
      */
     public Bean() {
     }
-    
+
     public int getNombre() {
         return nombre;
     }
@@ -38,5 +40,9 @@ public class Bean {
             l.add(i);
         }
         return l;
+    }
+
+    public String afficher() {
+        return "affichage_3?nb=" + nombre + "&amp;faces-redirect=true";
     }
 }

@@ -4,12 +4,15 @@
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <f:metadata>
+        <f:viewParam name="nb" value="#{bean2.nombre}"/>
+    </f:metadata>
+    
     <h:head>
         <title>Application&gt;affichage_4</title>
-        <f:metadata>
-            <f:viewParam name="nb" value="#{bean2.nombre}"/>
-        </f:metadata>
     </h:head>
+    
     <h:body>
         <h1>Application&gt;affichage_4</h1>
         Les nombres : <br/>

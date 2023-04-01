@@ -12,7 +12,7 @@
         <ui:repeat value="#{bean.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
-            <br/>
-            <h:link outcome="formulaire_1" value="Saisir un autre nombre"/>
+        <br/>
+        <h:link outcome="formulaire_1" value="Saisir un autre nombre"/>
     </h:body>
 </html>
